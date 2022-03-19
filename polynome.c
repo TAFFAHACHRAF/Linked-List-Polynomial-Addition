@@ -33,3 +33,20 @@ void display(struct node* head){
 	}
 	printf("\n");
 }
+struct node* polynomeAddition(struct node* poly1,struct node* poly2,struct node* sum){
+	struct node* p1=poly1,p2,poly2;
+//	if the first and the seconde polynome are empty
+	if(poly1 == NULL && poly2 == NULL){
+		return sum;
+	}
+//	if juste the first is empty
+	if(poly1 != NULL && poly2 == NULL){
+		sum=poly2;
+		return sum;
+	}
+//	if just the seconde is empty
+	if(poly1 == NULL && poly2 != NULL){
+		sum=poly1;
+		return sum;
+	}
+}
